@@ -17,10 +17,10 @@ searchBtn.addEventListener("click", async () => {
 document.addEventListener("DOMContentLoaded", async () => {
   const loader = document.querySelector(".loader");
 
-  await showRandomImages(10);
-
-  setTimeout(() => {
+  setTimeout(async () => {
     loader.style.display = "none";
+
+    await showRandomImages(10);
   }, 2000);
 });
 
