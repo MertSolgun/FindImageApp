@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 const showRandomImages = async (count) => {
-  await new Promise((resolve) => setTimeout(resolve, 500));
   const apiUrl = `https://api.unsplash.com/photos/random?client_id=${accessKey}&count=${count}`;
   const response = await fetch(apiUrl);
   const data = await response.json();
