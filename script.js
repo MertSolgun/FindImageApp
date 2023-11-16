@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     loader.style.display = "none";
 
     await showRandomImages(10);
-  }, 2000);
+  }, 2500);
 });
 
 const showRandomImages = async (count) => {
